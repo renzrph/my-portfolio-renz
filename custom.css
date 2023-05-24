@@ -1,0 +1,180 @@
+body {
+  overflow-x: hidden;
+}
+
+/* RenzRPh anchor tag */
+.custom-width {
+  width: fit-content;
+}
+
+/* icons */
+.icons {
+  height: 30px;
+  width: 30px;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 5px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: -15px;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.alert {
+  background-color: #28a745;
+  color: #ffffff;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #28a745;
+  border-radius: 4px;
+  text-align: center;
+  display: none;
+}
+
+/* rotating animation */
+.rotate1 {
+  animation: circular-motion 12s infinite linear;
+  height: 25px;
+  width: 25px;
+}
+
+.rotate2 {
+  animation: circular-motion 11s infinite linear;
+  height: 25px;
+  width: 25px;
+}
+
+.rotate3 {
+  animation: circular-motion 10s infinite linear;
+  height: 25px;
+  width: 25px;
+}
+
+.rotate4 {
+  animation: circular-motion 9s infinite linear;
+  height: 25px;
+  width: 25px;
+}
+
+.rotate5 {
+  animation: circular-motion 8s infinite linear;
+  height: 25px;
+  width: 25px;
+}
+
+.rotate6 {
+  animation: circular-motion 7s infinite linear;
+  height: 25px;
+  width: 25px;
+}
+
+.rotate7 {
+  animation: circular-motion 6s infinite linear;
+  height: 25px;
+  width: 25px;
+}
+
+@keyframes circular-motion {
+  0% {
+    transform: rotate(0deg) translateX(100px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(100px) rotate(-360deg);
+  }
+}
+
+/* Projects & Zoom in zoom out on card images*/
+.card {
+  overflow: hidden;
+  position: relative;
+}
+
+.project-thumbnail {
+  transition: transform 0.3s ease;
+}
+
+.project-thumbnail:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.my-portfolio {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+}
+
+/* Slide effect on Skills Section */
+.slide-in {
+  animation: slideIn 1s forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
