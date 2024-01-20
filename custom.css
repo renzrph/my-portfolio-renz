@@ -148,6 +148,11 @@ button[type="submit"]:hover {
 .card {
   overflow: hidden;
   position: relative;
+  height: 340px;
+}
+
+.project-title {
+  margin-top: 0.75rem;
 }
 
 .project-thumbnail {
